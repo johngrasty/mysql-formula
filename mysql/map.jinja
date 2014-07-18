@@ -28,4 +28,12 @@
         'python': 'pymysql',
         'mysql_size': 'medium',
     },
+        'Solaris': {
+        'server': 'percona-server',
+        'client': 'percona-client',
+        'service': 'percona',
+        'config': '/opt/local/etc/my.cnf',
+        'python': 'py27-mysqldb',
+        'mysql_size': 'small',
+    },
 }, merge=salt['pillar.get']('mysql:lookup')) %}
